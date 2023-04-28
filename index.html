@@ -10,30 +10,32 @@
 <body>
 
     <header>
-        <a class="frontbyte-logo">
-            <img href="#" src="img/img-logo-desktop-light.svg" width="40" height="40" alt="frontbyte-logo">
-        </a>
-        <nav class="navigation">
-            <section class="container">
-                <ul class="navigation__list">
-                    <li class="navigation__item"><a>About</a></li>
-                    <li class="navigation__item"><a>Projects</a></li>
-                    <li class="navigation__item"><a>Services</a></li>
-                    <li class="navigation__item"><a>Our team</a></li>
-                    <li class="navigation__item"><a>Events</a></li>
-                    <li class="navigation__item"><a>Contacts</a></li>
-                </ul>
-        </section>
-        </nav>
-        <div class="language">
-            <button class="language__item">No</button>
-            <button class="language__item language__item--active">En</button>
-            <button class="language__item">Ru</button>
+        <div class="full-container">
+            <a class="frontbyte-logo">
+                <img href="#" src="img/img-logo-desktop-light.svg" width="40" height="40" alt="frontbyte-logo">
+            </a>
+            <nav class="navigation">
+                <section class="container">
+                    <ul class="navigation__list">
+                        <li class="navigation__item"><a>About</a></li>
+                        <li class="navigation__item"><a>Projects</a></li>
+                        <li class="navigation__item"><a>Services</a></li>
+                        <li class="navigation__item"><a>Our team</a></li>
+                        <li class="navigation__item"><a>Events</a></li>
+                        <li class="navigation__item"><a>Contacts</a></li>
+                    </ul>
+            </section>
+            </nav>
+            <div class="language">
+                <button class="language__item">No</button>
+                <button class="language__item language__item--active">En</button>
+                <button class="language__item">Ru</button>
+            </div>
         </div>
     </header>
 
     <main>
-        <section class="start-screen" >
+        <section class="start-screen full-container" >
             <section class="container">
                 <h2 class="start-screen__title">We provide digital services
                     and develop our own products in sports and iHealth industry</h2>
@@ -46,40 +48,48 @@
 
 <!-- **********advantage********* -->
 
-        <section class="container">
-            <h2 class="title">We combine high level of professionalism and individual approach</h2>
-            <p class="subtitle">We have subject domain expertise in various aspects</p>
+        <div class="full-container full-container--white">
+            <section class="container approach">
+                <h2 class="approach__title">We combine high level of professionalism and individual approach</h2>
+                <p class="approach__subtitle">We have subject domain expertise in various aspects</p>
 
-            <ul class="card">
-                <li class="card__item">
-                    <img class="card__image" width="50px" height="52px" src="img/" alt="">
-                    <p class="card__description description-bold">Project management for simple and complex projects</p>
-                </li>
+                <ul class="card">
+                    <li class="card__item">
+                        <div class="card__image">
+                            <img width="50px" height="52px" src="img/ic-project.svg" alt="">
+                        </div>
+                        <p class="card__description description-bold">Project management for simple and complex projects</p>
+                    </li>
 
-                <li class="card__item">
-                    <img class="card__image" width="24px" height="59px" src="img/" alt="">
-                    <p class="card__description description-bold">Management for hire</p>
-                </li>
+                    <li class="card__item">
+                        <div class="card__image">
+                            <img width="24px" height="59px" src="img/ic-hire.svg" alt="">
+                        </div>
+                        <p class="card__description description-bold">Management for hire</p>
+                    </li>
 
-                <li class="card__item">
-                    <img class="card__image" width="90px" height="90px" src="img/" alt="">
-                    <p class="card__description description-bold">Digital transformation</p>
-                </li>
-            </ul>
+                    <li class="card__item">
+                        <div class="card__image">
+                            <img width="56px" height="43px" src="img/ic-digital.svg" alt="">
+                        </div>
+                        <p class="card__description description-bold">Digital transformation</p>
+                    </li>
+                </ul>
 
-            <h2>What We Do</h2>
-            <ul class="list">
-                <li><p class="description description-light">Development and support of new and existing software systems</p></li>
-                <li><p class="description description-light"></p>Deep analytics in various spheres</li>
-                <li><p class="description description-light"></p>Insights-driven solutions</li>
-                <li><p class="description description-light"></p>Agile product engineering</li>
+                <h2 class="wwd-title">What We Do</h2>
+                <ul class="wwd-list">
+                    <li class="wwd-description description-light">Development and support of new and existing software systems</p></li>
+                    <li class="wwd-description description-light">Deep analytics in various spheres</li>
+                    <li class="wwd-description description-light">Insights-driven solutions</li>
+                    <li class="wwd-description description-light">Agile product engineering</li>
 
-                <li><p class="description description-light"></p>Quality Assurance for new and existing products</li>
-                <li><p class="description description-light"></p>Data collection, research and analysis</li>
-                <li><p class="description description-light"></p>UX/UI concepts and design</li>
-                <li><p class="description description-light"></p>Video and motion design</li>
-            </ul>
-        </section>
+                    <li class="wwd-description description-light">Quality Assurance for new and existing products</li>
+                    <li class="wwd-description description-light">Data collection, research and analysis</li>
+                    <li class="wwd-description description-light">UX/UI concepts and design</li>
+                    <li class="wwd-description description-light">Video and motion design</li>
+                </ul>
+            </section>
+        </div>
     </main>
 </body>
 </html>
