@@ -36,6 +36,7 @@ body {
 .full-container {
     max-width: 1180px;
     margin: 0 auto;
+    margin-bottom: 100px;
 }
 
 .full-container--white {
@@ -62,7 +63,6 @@ header {
     justify-content: center;
     align-items: center;
     padding-top: 40px;
-    margin-bottom: 92px;
 }
 /*  */
 
@@ -192,4 +192,25 @@ header {
     background-color: #64cae1;
     position: absolute;
     transform: translate(-60px, 12px);
+}
+
+.work__title {
+    color: #2d2d42;
+}
+
+.work__subtitle {
+    font-size: 30px;
+    font-weight: 300;
+    line-height: 1.33;
+    color: #2d2d42;;
+}
+
+.grid-container {
+    display: grid;
+    grid-template: 600px 1fr / 580px 1fr;
+    gap: 20px;
+}
+
+.grid-item:first-child, .grid-item:last-child {
+    grid-column: span 2;
 }
