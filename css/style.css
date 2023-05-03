@@ -231,6 +231,15 @@ header {
     background-color: #64cae1;
 }
 
+.text-block--wide {
+    width: 400px;
+    padding-left: 0; padding-bottom: 0;
+    margin-top: 220px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
 .container--right {
     display: flex;
     justify-content: flex-end;
@@ -281,4 +290,58 @@ header {
     font-weight: 300;
     line-height: 1.33;
     letter-spacing: normal;
+}
+
+.img-holder {
+    width: 50px; height: 26px;
+    background-color: green;
+
+}
+
+img[src^="img/img-inside"] {
+    right: 0px;
+}
+
+.slider-subtitle {
+    font-size: 30px;
+    font-weight: 300;
+    line-height: 1.33;
+    margin-bottom: 55px;
+}
+.slider-wrapper {
+    display: flex;
+    flex-direction: row;
+}
+
+label::after {
+    content: "";
+    display: block;
+    width: 65px; height: 1px;
+    margin-right: 9px;
+    background-color: #c0c6c8;
+    cursor: pointer;
+    bottom: 0;
+}
+
+input {
+    display: none;
+}
+
+input:checked ~ label::after {
+    background-color: #2d2d42;
+}
+
+.slider-picture {
+    display: flex;
+    overflow: hidden;
+    width: 980px;
+}
+
+.text-block__title--slider {
+    margin: 0;
+}
+
+.place-holder {
+    width: 50px; height: 25px;
+    background-color: green;
 }
