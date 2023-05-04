@@ -34,7 +34,7 @@ body {
 }
 
 .full-container {
-    max-width: 1180px;
+    width: 1180px;
     margin: 0 auto;
     margin-bottom: 100px;
 }
@@ -106,6 +106,20 @@ header {
     border-right: 1px solid red;
     padding: 25px 100px 25px 200px;
 
+}
+.start-screen{
+    position: relative;
+}
+
+.start-screen__image {
+    position: absolute;
+    background-image: url('../img/img-header.png');
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    width: 1180px; height: 680px;
+    transform: translateY(-36%); 
+    z-index: -1;
 }
 
 .header-image {
