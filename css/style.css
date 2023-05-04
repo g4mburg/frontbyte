@@ -74,6 +74,16 @@ h2 {
     letter-spacing: -0.75px
 }
 
+h4 {
+    font-size: 13px;
+    font-weight: 900;
+    line-height: 1.54;
+    letter-spacing: 1.73px;
+    margin-bottom: 30px;
+    text-transform: uppercase;
+    color: #2d2d42;
+}
+
 /*  */
 /* header {
     display: flex;
@@ -402,4 +412,28 @@ input:checked ~ label::after {
 .place-holder {
     width: 50px; height: 25px;
     background-color: green;
+}
+
+.news {
+    display: flex;
+    gap: 120px;
+}
+
+.news-item__text {
+    margin-bottom: 20px;
+    font-size: 20px;
+    font-weight: 300;
+    line-height: 1.5;
+    color: #2d2d42;
+}
+
+.news-item__date {
+    font-size: 15px;
+    font-weight: 300;
+    line-height: 1.33;
+    color: #c0c6c8;
+}
+
+.news-section__title {
+    margin-bottom: 50px;
 }
