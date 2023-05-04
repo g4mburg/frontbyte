@@ -283,6 +283,7 @@ header {
     line-height: 1.54;
     letter-spacing: 1.73px;
     text-transform: uppercase;
+    color: #2d2d42;
 }
 
 .card-text__description {
@@ -290,6 +291,7 @@ header {
     font-weight: 300;
     line-height: 1.33;
     letter-spacing: normal;
+    color: #2d2d42;
 }
 
 .img-holder {
