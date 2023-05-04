@@ -34,7 +34,7 @@ body {
 }
 
 .full-container {
-    width: 1180px;
+    max-width: 1180px;
     margin: 0 auto;
     margin-bottom: 100px;
 }
@@ -49,6 +49,23 @@ body {
     margin: 0 auto;
 }
 
+.header-container {
+    position: relative;
+    padding-top: 40px;
+}
+
+.frontbyte-logo {
+    position: absolute;
+    transform: translateY(-25%);
+    padding-left: 5%;
+}
+
+.language {
+    position: absolute;
+    transform: translateY(-75%);
+    right: 5%;
+}
+
 h2 {
     font-size: 60px;
     font-weight: 900;
@@ -58,12 +75,12 @@ h2 {
 }
 
 /*  */
-header {
+/* header {
     display: flex;
     justify-content: center;
     align-items: center;
     padding-top: 40px;
-}
+} */
 /*  */
 
 .navigation__list {
@@ -97,7 +114,7 @@ header {
     margin-bottom: 100px;
     font-size: 20px;
     line-height: 1.5;
-    
+    font-weight: 300;
 }
 
 .start-screen__message {
@@ -122,12 +139,12 @@ header {
     z-index: -1;
 }
 
-.header-image {
+/* .header-image {
     position: absolute;
     top: 0; left: 50%;
     transform: translateX(-50%);
     z-index: -1;
-}
+} */
 
 .approach__title {
     color: #2d2d42;
