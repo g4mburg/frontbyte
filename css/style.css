@@ -111,19 +111,35 @@ h2 {
 }
 
 .start-screen__subtitle {
-    margin-bottom: 100px;
+    margin-bottom: 37px;
     font-size: 20px;
     line-height: 1.5;
     font-weight: 300;
 }
 
-.start-screen__message {
+.message-link {
     font-size: 20px;
-    border-top: 1px solid red;
-    border-right: 1px solid red;
+    border-top: 1px solid #f4f4f7;
+    border-right: 1px solid #f4f4f7;
     padding: 25px 100px 25px 200px;
 
 }
+
+.message-link__arrow {
+    transform: translateY(30%);
+    color: #f4f4f7;
+}
+
+.message-link:hover ~ .message-link__arrow {
+    transform: translateY(30%) translateX(10px);
+    transition-duration: 0.2s ;
+}
+
+.message-link__text {
+    padding-right: 15%;
+    color:#f4f4f7;
+}
+
 .start-screen{
     position: relative;
 }
