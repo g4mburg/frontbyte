@@ -1,14 +1,29 @@
-<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="30" height="30" viewBox="0 0 30 30">
-    <defs>
-        <path id="a" d="M28.071 16H0v-1h28.293L22 8.707 22.707 8l7.071 7.071-.318.318.318.318-7.07 7.071-.708-.707L28.071 16z"/>
-    </defs>
-    <g fill="none" fill-rule="evenodd">
-        <mask id="b" fill="#fff">
-            <use xlink:href="#a"/>
-        </mask>
-        <use fill="#2D2D42" fill-rule="nonzero" xlink:href="#a"/>
-        <g fill="#2D2D42" mask="url(#b)">
-            <path fill-rule="nonzero" d="M-250-240h30v30h-30z"/>
-        </g>
-    </g>
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Generator: Adobe Illustrator 25.2.3, SVG Export Plug-In . SVG Version: 6.00 Build 0)  -->
+<svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+	 viewBox="0 0 30 30" style="enable-background:new 0 0 30 30;" xml:space="preserve">
+<style type="text/css">
+	.st0{fill:#F4F4F7;}
+	.st1{filter:url(#Adobe_OpacityMaskFilter);}
+	.st2{fill-rule:evenodd;clip-rule:evenodd;fill:#FFFFFF;}
+	.st3{mask:url(#b_1_);}
+</style>
+<g>
+	<g>
+		<path id="a_1_" class="st0" d="M28.1,16H0v-1h28.3L22,8.7L22.7,8l7.1,7.1l-0.3,0.3l0.3,0.3l-7.1,7.1L22,22.1L28.1,16z"/>
+	</g>
+	<defs>
+		<filter id="Adobe_OpacityMaskFilter" filterUnits="userSpaceOnUse" x="-250" y="-240" width="30" height="30">
+			<feColorMatrix  type="matrix" values="1 0 0 0 0  0 1 0 0 0  0 0 1 0 0  0 0 0 1 0"/>
+		</filter>
+	</defs>
+	<mask maskUnits="userSpaceOnUse" x="-250" y="-240" width="30" height="30" id="b_1_">
+		<g class="st1">
+			<path id="a_2_" class="st2" d="M28.1,16H0v-1h28.3L22,8.7L22.7,8l7.1,7.1l-0.3,0.3l0.3,0.3l-7.1,7.1L22,22.1L28.1,16z"/>
+		</g>
+	</mask>
+	<g class="st3">
+		<path class="st0" d="M-250-240h30v30h-30V-240z"/>
+	</g>
+</g>
 </svg>
