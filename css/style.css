@@ -154,6 +154,7 @@ button {
 }
 
 .start-screen{
+    background-color: rgba(0, 0, 0, 0.5);
     position: relative;
     width: 1180px; 
     height: 680px;
@@ -166,7 +167,6 @@ button {
     background-repeat: no-repeat;
     width: 1180px; 
     height: 680px;
-    /* transform: translateY(-36%);  */
     z-index: -1;
 }
 
