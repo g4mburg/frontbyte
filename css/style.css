@@ -58,29 +58,38 @@ header {
 }
 
 .header-container {
-    position: relative;
-    padding-top: 40px;
-    margin-bottom: 0;
+    padding: 40px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    position: absolute;
+    width: 100%;
+    z-index: 1000;
+    max-width: 1180px;
+    box-sizing: border-box;
 }
 
 .frontbyte-logo {
-    position: absolute;
-    transform: translateY(-25%);
-    padding-left: 5%;
+    width: 40px; height: 40px;
 }
 
-.language {
-    position: absolute;
-    transform: translateY(-75%);
-    right: 5%;
-}
-
-h2 {
+h2, .title {
+    display: -webkit-box;
+    -webkit-line-clamp: 4;
+    -webkit-box-orient: vertical;
+    overflow: hidden;
     font-size: 60px;
     font-weight: 900;
     margin-bottom: 30px;
     line-height: 1.08;
-    letter-spacing: -0.75px
+    letter-spacing: -0.75px;
+}
+
+.subtitle {
+    display: -webkit-box;
+    -webkit-line-clamp: 4;
+    -webkit-box-orient: vertical;
+    overflow: hidden;
 }
 
 h3 {
@@ -100,11 +109,14 @@ h4 {
     color: #2d2d42;
 }
 
+.navigation {
+    margin: 0 auto 0 120px;
+}
+
 .navigation__list {
     display: flex;
     justify-content: flex-start;
     align-items: center;
-    gap: 50px;
     flex-wrap: wrap;
 }
 
@@ -112,10 +124,13 @@ a {
     color: inherit;
     text-decoration: inherit; 
     cursor: pointer;
+    text-decoration: underline transparent;
 }
 
-a:hover, button:hover {
-    text-shadow: 1px 1px 6px #ffffff;
+a:hover {
+    text-decoration-color: #f4f4f7;
+    transition-property: text-decoration-color;
+    transition-duration: 0.3s;
 }
 
 button {
@@ -130,11 +145,26 @@ button {
     color: #f4f4f7;
 }
 
-.language__item--active {
+.navigation__item {
+    margin-right: 50px;
+}
+
+.language__item{
     width: 40px;
     height: 40px;
-    border: 1px solid #f4f4f7;
+    border: 1px solid transparent;
     border-radius: 50%;
+    margin: 0 6px;
+}
+
+.language__item:not(.language__item--active):hover {
+    border-color: rgb(244, 244, 247, 0.5);
+    transition: border-color;
+    transition-duration: 0.3s;
+}
+
+.language__item--active {
+    border: 1px solid #f4f4f7;
 }
 
 .start-screen__title, .start-screen__subtitle, .start-screen__message {
@@ -151,6 +181,7 @@ button {
     font-size: 20px;
     line-height: 1.5;
     font-weight: 300;
+    max-width: 640px;
 }
 
 .start-screen{
@@ -575,7 +606,7 @@ input:checked ~ label::after {
     background-image: url('../img/ic-next.svg');
     background-repeat: no-repeat;
     background-position: 91%;
-    background-size: 7%;
+    background-size: 30px;
     cursor: pointer;
 }
 
