@@ -76,11 +76,15 @@ header {
 }
 
 h2 {
+    display: -webkit-box;
+    -webkit-line-clamp: 4;
+    -webkit-box-orient: vertical;
+    overflow: hidden;
     font-size: 60px;
     font-weight: 900;
     margin-bottom: 30px;
     line-height: 1.08;
-    letter-spacing: -0.75px
+    letter-spacing: -0.75px;
 }
 
 h3 {
