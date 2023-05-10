@@ -134,11 +134,19 @@ button {
     color: #f4f4f7;
 }
 
-.language__item--active {
+.language__item{
     width: 40px;
     height: 40px;
-    border: 1px solid #f4f4f7;
+    border: 1px solid transparent;
     border-radius: 50%;
+}
+
+.language__item:not(.language__item--active):hover {
+    border: 1px solid rgb(244, 244, 247, 0.5);
+}
+
+.language__item--active {
+    border: 1px solid #f4f4f7;
 }
 
 .start-screen__title, .start-screen__subtitle, .start-screen__message {
