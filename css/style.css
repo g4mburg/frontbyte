@@ -117,7 +117,6 @@ h4 {
     display: flex;
     justify-content: flex-start;
     align-items: center;
-    gap: 50px;
     flex-wrap: wrap;
 }
 
@@ -144,6 +143,10 @@ button {
     font-size: 15px;
     font-weight: 300;
     color: #f4f4f7;
+}
+
+.navigation__item {
+    margin-right: 50px;
 }
 
 .language__item{
