@@ -58,21 +58,19 @@ header {
 }
 
 .header-container {
-    position: relative;
-    padding-top: 40px;
-    margin-bottom: 0;
+    padding: 40px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    position: absolute;
+    width: 100%;
+    z-index: 1000;
+    max-width: 1180px;
+    box-sizing: border-box;
 }
 
 .frontbyte-logo {
-    position: absolute;
-    transform: translateY(-25%);
-    padding-left: 5%;
-}
-
-.language {
-    position: absolute;
-    transform: translateY(-75%);
-    right: 5%;
+    width: 40px; height: 40px;
 }
 
 h2 {
@@ -102,6 +100,10 @@ h4 {
     margin-bottom: 30px;
     text-transform: uppercase;
     color: #2d2d42;
+}
+
+.navigation {
+    margin: 0 auto 0 120px;
 }
 
 .navigation__list {
@@ -142,6 +144,7 @@ button {
     height: 40px;
     border: 1px solid transparent;
     border-radius: 50%;
+    margin: 0 6px;
 }
 
 .language__item:not(.language__item--active):hover {
