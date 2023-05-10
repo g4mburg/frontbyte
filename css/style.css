@@ -118,8 +118,8 @@ a {
     cursor: pointer;
 }
 
-a:hover, button:hover {
-    text-shadow: 1px 1px 6px #ffffff;
+a:hover {
+    text-decoration: underline;
 }
 
 button {
