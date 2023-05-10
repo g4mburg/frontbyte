@@ -603,7 +603,7 @@ input:checked ~ label::after {
     background-image: url('../img/ic-next.svg');
     background-repeat: no-repeat;
     background-position: 91%;
-    background-size: 7%;
+    background-size: 30px;
     cursor: pointer;
 }
 
