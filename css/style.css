@@ -214,14 +214,17 @@ button {
 
 .card {
     display: flex;
-    justify-content: space-between;
-    margin-bottom: 70px;
+    justify-content: flex-start;
+    margin-bottom: 40px;
+    flex-wrap: wrap;
+    width: 900px;
 }
 
 .card__item {
-    max-width: 240px;
+    width: 240px; height: 240px;
     display: flex;
     flex-direction: column;
+    margin-right: 60px;
 }
 
 .card__image {
@@ -231,7 +234,7 @@ button {
     display: flex;
     justify-content: center;
     align-items: center;
-    margin-bottom: 30px;
+    margin-bottom: 35px;
 }
 
 .card__item:nth-child(2n) > .card__image {
