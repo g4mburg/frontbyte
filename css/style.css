@@ -301,13 +301,24 @@ button {
 
 .grid-container {
     display: grid;
-    grid-template: 600px 1fr / 580px 1fr;
+    grid-template-columns: 580px 1fr;
+    grid-template-rows: auto;
     gap: 20px;
 }
 
 .grid-item:first-child, .grid-item:last-child {
     grid-column: span 2;
     position: relative;
+}
+
+.image-wrapper > img {
+    object-fit: cover;
+    overflow: hidden;
+    width: 100%;
+}
+
+.image-wrapper {
+    height: 320px;
 }
 
 .text-block {
@@ -368,8 +379,8 @@ button {
 }
 
 .card-text {
-    height: 280px;
-    padding-top: 40px;
+    min-height: 260px;
+    padding-top: 35px;
 }
 
 .card-text__title {
@@ -387,6 +398,8 @@ button {
     font-weight: 300;
     line-height: 1.33;
     letter-spacing: normal;
+    width: calc(100% - 140px);
+    max-width: 440px;
     color: #2d2d42;
 }
 
