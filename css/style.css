@@ -522,13 +522,12 @@ input:checked ~ label::after {
 }
 
 .footer__container {
-    padding-left: 200px;
-    padding-right: 73px;
     position: relative;
     padding-top: 100px;
     background-color: #000000;
     z-index: 0;
     margin-bottom: 0;
+    overflow: hidden;
 }
 
 .map {
@@ -568,12 +567,13 @@ input:checked ~ label::after {
     display: inline-block;
     color: #f4f4f7;
     margin-right: 240px;
-    margin-bottom: 75px;
+    margin-bottom: 65px;
 }
 
 .footer__socials {
     display: inline-block;
-    text-align: center;
+    vertical-align: top;
+    transform: translate(15%, 50%);
 }
 
 .footer__link {
