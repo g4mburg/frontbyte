@@ -214,14 +214,17 @@ button {
 
 .card {
     display: flex;
-    justify-content: space-between;
-    margin-bottom: 70px;
+    justify-content: flex-start;
+    margin-bottom: 40px;
+    flex-wrap: wrap;
+    width: 900px;
 }
 
 .card__item {
-    max-width: 240px;
+    width: 240px; height: 240px;
     display: flex;
     flex-direction: column;
+    margin-right: 60px;
 }
 
 .card__image {
@@ -231,7 +234,7 @@ button {
     display: flex;
     justify-content: center;
     align-items: center;
-    margin-bottom: 30px;
+    margin-bottom: 35px;
 }
 
 .card__item:nth-child(2n) > .card__image {
@@ -255,8 +258,9 @@ button {
 }
 
 .wwd-list {
+    margin-left: -60px;
     column-count: 2;
-    column-gap: 120px;
+    column-gap: 160px;
     padding-bottom: 130px;
     column-width: 120px;
     overflow-wrap: break-word;
@@ -339,16 +343,19 @@ button {
     font-weight: 900;
     line-height: 1.54;
     letter-spacing: 1.73px;
-    margin-bottom: 30px;
+    margin-bottom: 10px;
     text-transform: uppercase;
     color: #2d2d42;
 }
 
 .text-block__subtitle {
+    display: flex;
+    align-items: center;
     font-size: 30px;
     font-weight: 300;
     line-height: 1.33;
     letter-spacing: normal;
+    height: 100%;
     color: #2d2d42;
 }
 
@@ -608,14 +615,25 @@ input:checked ~ label::after {
     background-position: 91%;
     background-size: 30px;
     cursor: pointer;
+    transition: background-color 0.3s, text-decoration 0.3s;;
 }
 
+.button:hover {
+    background-color: rgb(255, 255, 255, 0.1);
+    transition: background-color 0.3s, text-decoration 0.3s;
+}
 .button--accent {
     display: inline-block;
     background-color: #64cae1;
     border: none;
     margin-right: 113px;
     margin-left: -200px;
+    transition: background-color 0.3s, text-decoration 0.3s;
+}
+
+.button--accent:hover {
+    background-color: rgb(100, 202, 225, 0.3);
+    transition: background-color 0.3s, text-decoration 0.3s;
 }
 
 .footer__copyright {
