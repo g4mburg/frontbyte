@@ -343,16 +343,19 @@ button {
     font-weight: 900;
     line-height: 1.54;
     letter-spacing: 1.73px;
-    margin-bottom: 30px;
+    margin-bottom: 10px;
     text-transform: uppercase;
     color: #2d2d42;
 }
 
 .text-block__subtitle {
+    display: flex;
+    align-items: center;
     font-size: 30px;
     font-weight: 300;
     line-height: 1.33;
     letter-spacing: normal;
+    height: 100%;
     color: #2d2d42;
 }
 
