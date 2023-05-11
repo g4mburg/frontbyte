@@ -382,6 +382,11 @@ button {
     color: #f4f4f7;
 }
 
+.text-block__subtitle--slider {
+    padding-right: 20px;
+    height: auto;
+}
+
 .card-text {
     min-height: 260px;
     padding-top: 35px;
@@ -430,7 +435,7 @@ img[src^="img/img-inside"] {
     font-size: 30px;
     font-weight: 300;
     line-height: 1.33;
-    margin-bottom: 55px;
+    margin-bottom: 90px;
     color: #2d2d42;
 }
 
@@ -444,6 +449,10 @@ label::after {
     bottom: 0;
 }
 
+.slider-item > label {
+    display: block;
+    padding-top: 25px;
+}
 input {
     display: none;
 }
@@ -469,7 +478,14 @@ input:checked ~ label::after {
 
 .news {
     display: flex;
-    gap: 120px;
+    column-gap: 120px;
+    row-gap: 40px;
+    padding-right: 100px;
+    flex-wrap: wrap;
+}
+
+.news-item {
+    max-width: 280px;
 }
 
 .news-item__text {
@@ -478,6 +494,10 @@ input:checked ~ label::after {
     font-weight: 300;
     line-height: 1.5;
     color: #2d2d42;
+    display: -webkit-box;
+    -webkit-line-clamp: 2;
+    -webkit-box-orient: vertical;
+    overflow: hidden;
 }
 
 .news-item__date {
