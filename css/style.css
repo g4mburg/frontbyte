@@ -608,14 +608,25 @@ input:checked ~ label::after {
     background-position: 91%;
     background-size: 30px;
     cursor: pointer;
+    transition: background-color 0.3s, text-decoration 0.3s;;
 }
 
+.button:hover {
+    background-color: rgb(255, 255, 255, 0.1);
+    transition: background-color 0.3s, text-decoration 0.3s;
+}
 .button--accent {
     display: inline-block;
     background-color: #64cae1;
     border: none;
     margin-right: 113px;
     margin-left: -200px;
+    transition: background-color 0.3s, text-decoration 0.3s;
+}
+
+.button--accent:hover {
+    background-color: rgb(100, 202, 225, 0.3);
+    transition: background-color 0.3s, text-decoration 0.3s;
 }
 
 .footer__copyright {
