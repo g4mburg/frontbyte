@@ -258,8 +258,9 @@ button {
 }
 
 .wwd-list {
+    margin-left: -60px;
     column-count: 2;
-    column-gap: 120px;
+    column-gap: 160px;
     padding-bottom: 130px;
     column-width: 120px;
     overflow-wrap: break-word;
