@@ -688,12 +688,15 @@ input:checked ~ label::after {
     border-top: solid 1px #f4f4f7;
     border-right: solid 1px #f4f4f7;
     color: #f4f4f7;
-    background-image: url('../img/ic-next.svg');
+    background-image: url(../img/ic-next.svg);
     background-repeat: no-repeat;
     background-position: 91%;
     background-size: 30px;
     cursor: pointer;
-    transition: background-color 0.3s, text-decoration 0.3s;;
+    transition: background-color 0.3s, text-decoration 0.3s;
+    position: absolute;
+    left: 0;
+    bottom: 0;
 }
 
 .button:hover {
