@@ -10,13 +10,13 @@
 <body>
 
     <header>
-        <div class="full-container">
+        <div class="container">
             <div class="header-container">
                 <a class="frontbyte-logo">
                     <img href="javascript:void(0);" src="img/img-logo-desktop-light.svg" width="40" height="40" alt="frontbyte-logo">
                 </a>
                 <nav class="navigation">
-                    <div class="container">
+                    <div class="content-wrap">
                         <ul class="navigation__list">
                             <li class="navigation__item"><a href="#start-screen">About</a></li>
                             <li class="navigation__item"><a href="#project">Projects</a></li>
@@ -37,21 +37,26 @@
     </header>
 
     <main>
-        <section id="start-screen" class="start-screen full-container" >
-            <div class="start-screen__image"></div>
-            <section class="container">
-                <h1 class="start-screen__title title">We provide digital services
-                    and develop our own products in sports and iHealth industry</h1>
-                <p class="start-screen__subtitle subtitle">We put technology and sport together to create the world's most efficient 
-                    and popular sports apps.</p>
-            </section>
-            <a href="javascript:void(0);" class="button">Drop us a line</a>
+        <section id="start-screen" class="start-screen" >
+            <div class="container">
+                
+                    <div class="content-wrap">
+                        <div class="start-screen__image"></div>
+                        <h1 class="start-screen__title title">We provide digital services
+                            and develop our own products in sports and iHealth industry</h1>
+                        <p class="start-screen__subtitle subtitle">We put technology and sport together to create the world's most efficient 
+                            and popular sports apps.</p>
+                    </div>
+                <a href="javascript:void(0);" class="button">Drop us a line</a>
+            </div>
         </section>
 
 <!-- **********advantage********* -->
 
-        <div class="full-container full-container--white">
-            <section id="approach" class="container approach">
+        
+            <section id="approach" class="approach">
+                <div class="container container--white">
+                    <div class="content-wrap">
                 <h2 class="approach__title">We combine high level of professionalism and individual approach</h2>
                 <p class="approach__subtitle">We have subject domain expertise in various aspects</p>
 
@@ -77,8 +82,12 @@
                         <p class="card__description description-bold">Digital transformation</p>
                     </li>
                 </ul>
+            </div>
+            </section>
 
             <section class="job-types">
+                <div class="container container--white">
+                <div class="content-wrap">
                 <h2 class="job-types__title">What We Do</h2>
                 <ul class="types-list">
                     <li class="types-list-item description-light">Development and support of new and existing software systems</p></li>
@@ -91,12 +100,13 @@
                     <li class="types-list-item description-light">UX/UI concepts and design</li>
                     <li class="types-list-item description-light">Video and motion design</li>
                 </ul>
+                </div>
+            </div>
             </section>
-        </div>
 
         <section class="project" id="project">
-            <div class="full-container">
-                <div class="container">
+            <div class="container">
+                <div class="content-wrap">
                     <h2 class="project__title">Our Work</h2>
                     <p class="project__subtitle">We change the way businesses and industries operate.</p>
                 </div>
@@ -104,7 +114,7 @@
                 <div class="grid-container">
                     <div class="project-item grid-item--wide">
                         <a href="javascript:void(0);" alt="">
-                            <div class="container">
+                            <div class="content-wrap">
                                 <div class="text-block text-block--color-accent">
                                     <h4 class="text-block__title text-block__title--color-accent">BirdieEyes</h4>
                                     <p class="text-block__subtitle text-block__subtitle--color-accent">We have introduced AR technology into one of the most traditional games and made it even more interesting</p>
@@ -168,23 +178,27 @@
         </section>
 
         <section class="team">
-            <div class="full-container">
-                <div class="team-item grid-item--wide">
-                    <a href="javascript:void(0);" alt="">
-                        <div id="our-team" class="container container--right">
-                            <div class="text-block">
-                                <h4 class="text-block__title">Our team</h4>
-                                <p class="text-block__subtitle">We are united by our passion to create unique and efficient digital products</p>
+            <div class="container">
+                <div class="grid-container">
+                    <div class="team-item grid-item--wide">
+                        <a href="javascript:void(0);" alt="">
+                            <div id="our-team" class="content-wrap content-wrap--right">
+                                <div class="text-block">
+                                    <h4 class="text-block__title">Our team</h4>
+                                    <p class="text-block__subtitle">We are united by our passion to create unique and efficient digital products</p>
+                                </div>
                             </div>
-                        </div>
-                        <img src="img/img-team-home.png" alt="" width="1180" height="600" srcset="">
-                    </a>
+                            <picture class="image-wrapper">
+                                <img src="img/img-team-home.png" alt="" width="1180" height="600" srcset="">
+                            </picture>
+                        </a>
+                    </div>
                 </div>
             </div>
         </section>
 
-        <section class="full-container">
-            <div class="container">
+        <section class="container">
+            <div class="content-wrap">
                 <h2 class="slider-title">Inside Frontbyte</h2>
                 <p class="slider-subtitle">We change the way businesses and industries operate.</p>
             </div>
@@ -215,7 +229,7 @@
                         </li>
                     </ul>
                 </div>
-                <div class="container--right">
+                <div class="content-wrap--right">
                     <picture class="slider-picture">
                         <img src="img/img-inside-press.png" alt="" sizes="980x600" srcset="">
                         <img src="img/img-inside-press.png" alt="" sizes="980x600" srcset="">
@@ -226,7 +240,7 @@
         </section>
         <!-- *************************** -->
         <section id="news" class="news-section">
-            <div class="full-container">
+            <div class="container">
                 <h4 class="news-section__title">latest news</h4>
                 <ul class="news">
                     <li class="news-item">
@@ -246,7 +260,7 @@
         </section>
         <!-- ******************************* -->
         <footer id="contacts" class="footer">
-                <div class="full-container footer__container">
+                <div class="container footer__content-wrap">
                     <div class="map">
                         <picture class="map__picture">
                             <img class="map__img" src="img/img-map.svg" alt="">
@@ -254,7 +268,7 @@
                         <span class="map__norway"></span>
                         <span class="map__belarus"></span>
                     </div>
-                    <div class="container">
+                    <div class="content-wrap">
                         <h2 class="title title--footer">Contacts</h2>
                         <div class="footer__socials">
                             <a href="javascript:void(0);" class="footer__link">

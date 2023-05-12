@@ -34,17 +34,21 @@ body {
     background-color: #f4f4f7;
 }
 
-.full-container {
+.container {
     max-width: 1180px;
     margin: 0 auto 100px auto;
 }
 
-.full-container--white {
+.container--white {
     background-color: #ffffff;
     padding-top: 90px;
 }
 
-.container {
+.container--white:not(:last-of-type) {
+    margin-bottom: 0;
+}
+
+.content-wrap {
     max-width: 780px;
     margin: 0 auto;
 }
@@ -62,7 +66,7 @@ header {
     display: flex;
     flex-direction: row;
     align-items: center;
-    position: absolute;
+    /* position: absolute; */
     width: 100%;
     z-index: 1000;
     max-width: 1180px;
@@ -212,17 +216,21 @@ button {
 .start-screen{
     background-color: rgba(0, 0, 0, 0.5);
     position: relative;
-    width: 1180px; 
+    max-width: 1180px; 
     height: 680px;
+    margin: 0 auto;
 }
 
 .start-screen__image {
     position: absolute;
-    background-image: url('../img/img-header.png');
-    background-size: contain;
+    left: 0;
+    top: 0;
+    background-image: url(../img/img-header.png);
+    background-size: cover;
     background-repeat: no-repeat;
-    width: 1180px; 
-    height: 680px;
+    max-width: 1180px;
+    height: 100%;
+    width: 100%;
     z-index: -1;
 }
 
@@ -325,8 +333,10 @@ button {
 }
 
 .grid-container {
+    margin: 0 auto;
     display: grid;
-    grid-template-columns: 580px 1fr;
+    /* grid-template-columns: 580px 1fr; */
+    grid-template-columns: repeat(auto-fit, minmax(calc(50% - 10px), 1fr));
     grid-template-rows: auto;
     gap: 20px;
 }
@@ -334,6 +344,10 @@ button {
 .grid-item--wide {
     grid-column: span 2;
     position: relative;
+}
+
+.grid-item {
+    min-width: calc(50% - 10px);
 }
 
 .team {
@@ -373,7 +387,7 @@ button {
     justify-content: space-between;
 }
 
-.container--right {
+.content-wrap--right {
     display: flex;
     justify-content: flex-end;
 }
@@ -546,7 +560,7 @@ input:checked ~ label::after {
     padding-top: 100px;
 }
 
-.footer__container {
+.footer__content-wrap {
     position: relative;
     padding-top: 100px;
     background-color: #000000;
