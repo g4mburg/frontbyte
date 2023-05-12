@@ -603,9 +603,21 @@ input:checked ~ label::after {
     width: 30px;
     height: 30px;
     padding-bottom: 10px;
-    transition: fill .3s;
+    transition: fill 0.3s;
 }
 
+.footer__link > svg > path {
+    fill: #fff;
+    transition: fill 0.3s;
+}
+
+.footer__link:hover > svg > path {
+    fill: #63c9e0;
+}
+
+.footer__link:active > svg > path {
+    opacity: 0.5;
+}
 
 .footer__description {
     font-size: 20px;
@@ -683,15 +695,17 @@ input:checked ~ label::after {
 .button--accent {
     display: inline-block;
     background-color: #64cae1;
-    border: none;
+    border-top: 1px solid transparent;
+    border-right: 1px solid transparent;
     margin-right: 113px;
     margin-left: -200px;
     transition: background-color 0.3s, text-decoration 0.3s;
 }
 
 .button--accent:hover {
-    background-color: rgb(100, 202, 225, 0.3);
-    transition: background-color 0.3s, text-decoration 0.3s;
+    background-color: transparent;
+    border-top: 1px solid #f4f4f7;
+    border-right: 1px solid #f4f4f7;
 }
 
 .footer__copyright {
