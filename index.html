@@ -18,11 +18,11 @@
                 <nav class="navigation">
                     <div class="container">
                         <ul class="navigation__list">
-                            <li class="navigation__item"><a href="javascript:void(0);">About</a></li>
-                            <li class="navigation__item"><a href="javascript:void(0);">Projects</a></li>
-                            <li class="navigation__item"><a href="javascript:void(0);">Services</a></li>
+                            <li class="navigation__item"><a href="#start-screen">About</a></li>
+                            <li class="navigation__item"><a href="#project">Projects</a></li>
+                            <li class="navigation__item"><a href="#approach">Services</a></li>
                             <li class="navigation__item"><a href="#our-team">Our team</a></li>
-                            <li class="navigation__item"><a href="javascript:void(0);">Events</a></li>
+                            <li class="navigation__item"><a href="#news">Events</a></li>
                             <li class="navigation__item"><a href="#contacts">Contacts</a></li>
                         </ul>
                     </div>
@@ -37,7 +37,7 @@
     </header>
 
     <main>
-        <section class="start-screen full-container" >
+        <section id="start-screen" class="start-screen full-container" >
             <div class="start-screen__image"></div>
             <section class="container">
                 <h1 class="start-screen__title title">We provide digital services
@@ -51,7 +51,7 @@
 <!-- **********advantage********* -->
 
         <div class="full-container full-container--white">
-            <section class="container approach">
+            <section id="approach" class="container approach">
                 <h2 class="approach__title">We combine high level of professionalism and individual approach</h2>
                 <p class="approach__subtitle">We have subject domain expertise in various aspects</p>
 
@@ -78,30 +78,31 @@
                     </li>
                 </ul>
 
-                <h2 class="wwd-title">What We Do</h2>
-                <ul class="wwd-list">
-                    <li class="wwd-description description-light">Development and support of new and existing software systems</p></li>
-                    <li class="wwd-description description-light">Deep analytics in various spheres</li>
-                    <li class="wwd-description description-light">Insights-driven solutions</li>
-                    <li class="wwd-description description-light">Agile product engineering</li>
+            <section class="job-types">
+                <h2 class="job-types__title">What We Do</h2>
+                <ul class="types-list">
+                    <li class="types-list-item description-light">Development and support of new and existing software systems</p></li>
+                    <li class="types-list-item description-light">Deep analytics in various spheres</li>
+                    <li class="types-list-item description-light">Insights-driven solutions</li>
+                    <li class="types-list-item description-light">Agile product engineering</li>
 
-                    <li class="wwd-description description-light">Quality Assurance for new and existing products</li>
-                    <li class="wwd-description description-light">Data collection, research and analysis</li>
-                    <li class="wwd-description description-light">UX/UI concepts and design</li>
-                    <li class="wwd-description description-light">Video and motion design</li>
+                    <li class="types-list-item description-light">Quality Assurance for new and existing products</li>
+                    <li class="types-list-item description-light">Data collection, research and analysis</li>
+                    <li class="types-list-item description-light">UX/UI concepts and design</li>
+                    <li class="types-list-item description-light">Video and motion design</li>
                 </ul>
             </section>
         </div>
 
-        <section class="project">
+        <section class="project" id="project">
             <div class="full-container">
                 <div class="container">
-                    <h2 class="work__title">Our Work</h2>
-                    <p class="work__subtitle">We change the way businesses and industries operate.</p>
+                    <h2 class="project__title">Our Work</h2>
+                    <p class="project__subtitle">We change the way businesses and industries operate.</p>
                 </div>
 
                 <div class="grid-container">
-                    <div class="grid-item grid-item--wide">
+                    <div class="project-item grid-item--wide">
                         <a href="javascript:void(0);" alt="">
                             <div class="container">
                                 <div class="text-block text-block--color-accent">
@@ -115,7 +116,7 @@
                         </a>
                     </div>
 
-                    <div class="grid-item">
+                    <div class="project-item-item">
                         <a href="javascript:void(0);" alt="">
                             <picture class="image-wrapper">
                                 <img src="img/img-upsport.png" alt="" width="580" height="320" srcset="">
@@ -127,7 +128,7 @@
                         </a>
                     </div>
 
-                    <div class="grid-item">
+                    <div class="project-item-item">
                         <a href="javascript:void(0);" alt="">
                         <picture class="image-wrapper">
                             <img src="img/img-xland.png" alt="" width="580" height="320" srcset="">
@@ -139,7 +140,7 @@
                         </a>
                     </div>
 
-                    <div class="grid-item">
+                    <div class="project-item">
                         <a href="javascript:void(0);" alt="">
                             <picture class="image-wrapper">
                                 <img src="img/img-phonero.png" alt="" width="580" height="320" srcset="">
@@ -151,7 +152,7 @@
                         </a>
                     </div>
 
-                    <div class="grid-item">
+                    <div class="project-item">
                         <a href="javascript:void(0);" alt="">
                             <picture class="image-wrapper">
                                 <img src="img/img-kongsberg.png" alt="" width="580" height="320" srcset="">
@@ -168,7 +169,7 @@
 
         <section class="team">
             <div class="full-container">
-                <div class="grid-item grid-item--wide">
+                <div class="team-item grid-item--wide">
                     <a href="javascript:void(0);" alt="">
                         <div id="our-team" class="container container--right">
                             <div class="text-block">
@@ -224,7 +225,7 @@
                 </div>
         </section>
         <!-- *************************** -->
-        <section class="news-section">
+        <section id="news" class="news-section">
             <div class="full-container">
                 <h4 class="news-section__title">latest news</h4>
                 <ul class="news">
@@ -279,7 +280,7 @@
                         <div class="contacts contacts--first">
                             <h3 class="contacts__title">Norway</h3>
                             <address class="contacts__address">
-            <span class="contacts__text">Kristiansand</span>
+                                <span class="contacts__text">Kristiansand</span>
                                 <span class="contacts__text">Vestre strandgate, 23, 4th and 6th floor N-4611 </span>
                                 <a class="contacts__mail" href="mailto:contact@frontbyte.no">contact@frontbyte.no</a>
                                 <a class="contacts__tel" href="tel:+4741636983">+47 416 36 983</a>

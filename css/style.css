@@ -273,12 +273,12 @@ button {
     color: #2d2d42;
 }
 
-.wwd-title {
+.job-types__title {
     color: #c0c6c8;
     margin-bottom: 75px;
 }
 
-.wwd-list {
+.types-list {
     margin-left: -60px;
     column-count: 2;
     column-gap: 160px;
@@ -287,7 +287,7 @@ button {
     overflow-wrap: break-word;
 }
 
-.wwd-description {
+.types-list-item{
     color: #2d2d42;
     display: inline-block;
     font-size: 20px;
@@ -299,7 +299,7 @@ button {
     position: relative;
 }
 
-.wwd-description::before {
+.types-list-item::before {
     content: "";
     width: 30px;
     height: 1px;
@@ -308,11 +308,11 @@ button {
     transform: translate(-60px, 12px);
 }
 
-.work__title {
+.project__title {
     color: #2d2d42;
 }
 
-.work__subtitle {
+.project__subtitle {
     font-size: 30px;
     font-weight: 300;
     line-height: 1.33;
