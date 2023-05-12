@@ -237,11 +237,10 @@ button {
 }
 
 .card {
+    margin: 0 auto 0 200px;
     display: flex;
     justify-content: flex-start;
-    margin-bottom: 40px;
     flex-wrap: wrap;
-    width: 900px;
 }
 
 .card__item {
