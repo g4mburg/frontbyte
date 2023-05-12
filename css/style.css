@@ -154,6 +154,10 @@ a:hover {
     transition-duration: 0.3s;
 }
 
+a:active, button:active {
+    opacity: 0.5;
+}
+
 button {
     cursor: pointer;
 }
