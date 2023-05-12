@@ -286,7 +286,7 @@ button {
     column-gap: 160px;
     padding-bottom: 130px;
     column-width: 120px;
-    overflow-wrap: break-word;
+    overflow-wrap: normal;
 }
 
 .types-list-item{
@@ -295,7 +295,8 @@ button {
     font-size: 20px;
     font-weight: 300;
     line-height: 1.5;
-    width: 380px;
+    max-width: 400px;
+    width: 100%;
     padding-left: 60px;
     margin-bottom: 20px;
     position: relative;
