@@ -79,8 +79,6 @@ header {
     padding: 20px 40px;
     background-image: linear-gradient(to top, transparent, #2d2d42);
     backdrop-filter: blur(5px);
-    transition-property: opacity;
-    transition-duration: 10s;
   }
 
   /*  */
@@ -126,7 +124,7 @@ h4 {
 }
 
 .navigation {
-    margin: 0 auto 0 120px;
+    margin-left: -40px;
 }
 
 .navigation__list {
@@ -368,6 +366,10 @@ button {
     background-color: #64cae1;
 }
 
+.slider-block {
+    margin-bottom: 100px;
+}
+
 .text-block--wide {
     width: 400px;
     padding-left: 0; padding-bottom: 0;
@@ -534,6 +536,10 @@ input:checked ~ label::after {
     font-weight: 300;
     line-height: 1.33;
     color: #c0c6c8;
+}
+
+.news-section {
+    margin-bottom: 100px;
 }
 
 .news-section__title {
