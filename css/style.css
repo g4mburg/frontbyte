@@ -35,6 +35,8 @@ body {
 }
 
 .container {
+    padding: 0 10px;
+    box-sizing: border-box;
     max-width: 1180px;
     margin: 0 auto;
 }
@@ -220,7 +222,7 @@ button {
     position: absolute;
     left: 0;
     top: 0;
-    background-image: url(../img/img-header.png);
+    background-image: url(../img/img-header.jpg);
     background-size: cover;
     background-repeat: no-repeat;
     max-width: 1180px;
@@ -350,6 +352,11 @@ button {
     height: 320px;
 }
 
+.text-block__logo {
+    object-fit: contain;
+    overflow: hidden;
+}
+
 .text-block {
     box-sizing: border-box;
     width: 380px;
@@ -471,6 +478,7 @@ input:checked ~ label::after {
     display: flex;
     overflow: hidden;
     width: 980px;
+    object-fit: cover;
 }
 
 .text-block__title--slider {
@@ -543,6 +551,11 @@ input:checked ~ label::after {
 
 .map__picture {
     display: block;
+}
+
+.map__img {
+    overflow: hidden;
+    object-fit: cover;
 }
 
 .map__norway,
