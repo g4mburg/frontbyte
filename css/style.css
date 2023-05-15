@@ -53,6 +53,43 @@ body {
     margin: 0 auto;
 }
 
+.title {
+    display: -webkit-box;
+    -webkit-line-clamp: 4;
+    -webkit-box-orient: vertical;
+    overflow: hidden;
+    font-size: 60px;
+    font-weight: 900;
+    margin-bottom: 30px;
+    line-height: 1.08;
+    letter-spacing: -0.75px;
+}
+
+.subtitle {
+    display: -webkit-box;
+    -webkit-line-clamp: 4;
+    -webkit-box-orient: vertical;
+    overflow: hidden;
+    font-size: 30px;
+    font-weight: 300;
+    margin-bottom: 85px;
+}
+
+.mini-title {
+    font-size: 13px;
+    font-weight: 900;
+    line-height: 1.54;
+    letter-spacing: 1.73px;
+    margin-bottom: 30px;
+    text-transform: uppercase;
+}
+
+.mini-subtitle {
+    margin-bottom: 78px;
+    font-size: 20px;
+    line-height: 1.5;
+}
+
 header {
     position: absolute;
     top: 0;
@@ -87,40 +124,11 @@ header {
     width: 40px; height: 40px;
 }
 
-h2, .title {
-    display: -webkit-box;
-    -webkit-line-clamp: 4;
-    -webkit-box-orient: vertical;
-    overflow: hidden;
-    font-size: 60px;
-    font-weight: 900;
-    margin-bottom: 30px;
-    line-height: 1.08;
-    letter-spacing: -0.75px;
-}
-
-.subtitle {
-    display: -webkit-box;
-    -webkit-line-clamp: 4;
-    -webkit-box-orient: vertical;
-    overflow: hidden;
-}
-
 h3 {
     font-size: 20px;
     font-weight: bold;
     line-height: 1.5;
     margin-bottom: 20px;
-}
-
-h4 {
-    font-size: 13px;
-    font-weight: 900;
-    line-height: 1.54;
-    letter-spacing: 1.73px;
-    margin-bottom: 30px;
-    text-transform: uppercase;
-    color: #2d2d42;
 }
 
 .navigation {
@@ -196,10 +204,8 @@ button {
 
 .start-screen__subtitle {
     margin-bottom: 78px;
-    font-size: 20px;
-    line-height: 1.5;
-    font-weight: 300;
     max-width: 640px;
+    color: #f4f4f7;
 }
 
 .start-screen{
@@ -228,9 +234,6 @@ button {
 }
 
 .approach__subtitle {
-    font-size: 30px;
-    font-weight: 300;
-    margin-bottom: 85px;
     color: #2d2d42;
 }
 
@@ -290,9 +293,7 @@ button {
 .types-list-item{
     color: #2d2d42;
     display: inline-block;
-    font-size: 20px;
     font-weight: 300;
-    line-height: 1.5;
     max-width: 400px;
     width: 100%;
     padding-left: 60px;
@@ -314,9 +315,6 @@ button {
 }
 
 .project__subtitle {
-    font-size: 30px;
-    font-weight: 300;
-    line-height: 1.33;
     color: #2d2d42;
     margin-bottom: 90px;
 }
@@ -366,10 +364,6 @@ button {
     background-color: #64cae1;
 }
 
-.slider-block {
-    margin-bottom: 100px;
-}
-
 .text-block--wide {
     width: 400px;
     padding-left: 0; padding-bottom: 0;
@@ -385,31 +379,14 @@ button {
 }
 
 .text-block__title {
-    font-size: 13px;
-    font-weight: 900;
-    line-height: 1.54;
-    letter-spacing: 1.73px;
-    margin-bottom: 10px;
-    text-transform: uppercase;
-    color: #2d2d42;
+    -webkit-line-clamp: 1;
 }
 
 .text-block__subtitle {
-    display: flex;
-    align-items: center;
-    font-size: 30px;
-    font-weight: 300;
-    line-height: 1.33;
-    letter-spacing: normal;
-    height: 100%;
-    color: #2d2d42;
+    -webkit-line-clamp: 7;
 }
 
-.text-block__title--color-accent {
-    color: #f4f4f7;
-}
-
-.text-block__subtitle--color-accent {
+.text-block__title--color-accent, .text-block__subtitle--color-accent {
     color: #f4f4f7;
 }
 
@@ -434,8 +411,6 @@ button {
 }
 
 .card-text__description {
-    font-size: 30px;
-    font-weight: 300;
     line-height: 1.33;
     letter-spacing: normal;
     width: calc(100% - 140px);
@@ -521,9 +496,7 @@ input:checked ~ label::after {
 
 .news-item__text {
     margin-bottom: 20px;
-    font-size: 20px;
     font-weight: 300;
-    line-height: 1.5;
     color: #2d2d42;
     display: -webkit-box;
     -webkit-line-clamp: 2;
@@ -536,10 +509,6 @@ input:checked ~ label::after {
     font-weight: 300;
     line-height: 1.33;
     color: #c0c6c8;
-}
-
-.news-section {
-    margin-bottom: 100px;
 }
 
 .news-section__title {
@@ -710,13 +679,12 @@ input:checked ~ label::after {
     transition: background-color 0.3s, text-decoration 0.3s;
 }
 .button--accent {
-    display: inline-block;
     background-color: #64cae1;
     border-top: 1px solid transparent;
     border-right: 1px solid transparent;
     margin-right: 113px;
     margin-left: -200px;
-    transition: background-color 0.3s, text-decoration 0.3s;
+    position: static;
 }
 
 .button--accent:hover {
@@ -731,4 +699,8 @@ input:checked ~ label::after {
     font-weight: 300;
     color: #f4f4f7;
     margin-left: auto;
+}
+
+.block {
+    margin-bottom: 100px;
 }
