@@ -408,6 +408,7 @@ button {
     -webkit-line-clamp: 7;
     -webkit-box-orient: vertical;
     overflow: hidden;
+    margin-bottom: 0;
 }
 
 .text-block__title--color-accent, .text-block__subtitle--color-accent {
