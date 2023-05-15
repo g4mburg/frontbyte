@@ -494,7 +494,7 @@ input:checked ~ label::after {
     display: flex;
     column-gap: 120px;
     row-gap: 40px;
-    padding-right: 100px;
+    padding-right: 80px;
     flex-wrap: wrap;
 }
 
