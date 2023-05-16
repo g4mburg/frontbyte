@@ -514,14 +514,14 @@ input:checked ~ label {
 
 .news {
     display: flex;
-    column-gap: 120px;
-    row-gap: 40px;
+    justify-content: space-between;
     padding-right: 80px;
     flex-wrap: wrap;
 }
 
 .news-item {
     max-width: 280px;
+    margin-bottom: 40px;
 }
 
 .news-item__text {
