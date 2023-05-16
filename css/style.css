@@ -32,7 +32,8 @@
 :root {
     --dark: #2d2d42;
     --silver: #c0c6c8;
-    --light-silver: rgba(244, 244, 247, 0.9);
+    --light-silver: #f4f4f7;
+    --light-silver-transp: rgba(244, 244, 247, 0.8);
     --dark-sky-blue: #64cae1;
     --darkish-pink: #d04b9b;
     --white: #ffffff;
@@ -60,6 +61,7 @@ body {
 .content-wrap {
     max-width: 780px;
     margin: 0 auto;
+    padding: 0 20px;
 }
 
 .title {
@@ -181,7 +183,7 @@ button {
     background-color: transparent;
     font-size: 15px;
     font-weight: 300;
-    color: var(--light-silver);
+    color: var(--light-silver-transp);
 }
 
 .navigation__item {
@@ -203,11 +205,10 @@ button {
 }
 
 .language__item--active {
-    border: 1px solid var(--light-silver);
-    border-color: rgb(244, 244, 247, 0.5);
+    border: 1px solid rgb(244, 244, 247, 0.5);
 }
 
-.start-screen__title, .start-screen__subtitle, .start-screen__message {
+.start-screen__title, .start-screen__message {
     color: var(--light-silver);
 }
 
@@ -219,10 +220,10 @@ button {
 .start-screen__subtitle {
     margin-bottom: 78px;
     max-width: 640px;
-    color: var(--light-silver);
+    color: var(--light-silver-transp);
 }
 
-.start-screen{
+.start-screen {
     background-color: rgba(0, 0, 0, 0.6);
     position: relative;
     max-width: 1180px; 
@@ -477,21 +478,23 @@ label::after {
     display: block;
     width: 65px; height: 1px;
     margin-right: 9px;
-    background-color: var(--silver);
-    cursor: pointer;
-    bottom: 0;
 }
 
 .slider-item > label {
-    display: block;
-    padding-top: 25px;
+    display: inline-block;
+    height: 50px;
+    vertical-align: bottom;
+    box-shadow: 0 3px 0 -1px var(--silver);
+    cursor: pointer;
+    transition: box-shadow 0.3s;
 }
+
 input {
     display: none;
 }
 
-input:checked ~ label::after {
-    background-color: var(--dark);
+input:checked ~ label {
+    box-shadow: 0 3px 0 -1px var(--dark);
 }
 
 .slider-picture {
@@ -640,7 +643,7 @@ input:checked ~ label::after {
     font-weight: 300;
     font-style: normal;
     line-height: 1.5;
-    color: var(--light-silver);
+    color: var(--light-silver-transp);
     margin-bottom: 90px;
     max-width: 380px;
 }
@@ -672,7 +675,7 @@ input:checked ~ label::after {
     font-size: 15px;
     font-weight: 300;
     line-height: 1.67;
-    color: var(--light-silver);
+    color: var(--light-silver-transp);
 }
 
 .contacts__tel {
