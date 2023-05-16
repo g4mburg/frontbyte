@@ -32,9 +32,10 @@
 :root {
     --dark: #2d2d42;
     --silver: #c0c6c8;
-    --light-silver: #f4f4f7;
+    --light-silver: rgba(244, 244, 247, 0.9);
     --dark-sky-blue: #64cae1;
     --darkish-pink: #d04b9b;
+    --white: #ffffff;
 }
 
 body {
@@ -48,7 +49,7 @@ body {
 }
 
 .container--white {
-    background-color: #ffffff;
+    background-color: var(--white);
     padding-top: 90px;
 }
 
@@ -196,13 +197,14 @@ button {
 }
 
 .language__item:not(.language__item--active):hover {
-    border-color: rgb(244, 244, 247, 0.5);
+    border-color: rgb(244, 244, 247, 0.2);
     transition: border-color;
     transition-duration: 0.3s;
 }
 
 .language__item--active {
     border: 1px solid var(--light-silver);
+    border-color: rgb(244, 244, 247, 0.5);
 }
 
 .start-screen__title, .start-screen__subtitle, .start-screen__message {
@@ -221,7 +223,7 @@ button {
 }
 
 .start-screen{
-    background-color: rgba(0, 0, 0, 0.5);
+    background-color: rgba(0, 0, 0, 0.6);
     position: relative;
     max-width: 1180px; 
     height: 680px;
@@ -621,7 +623,7 @@ input:checked ~ label::after {
 }
 
 .footer__link > svg > path {
-    fill: #fff;
+    fill: var(--white);
     transition: fill 0.3s;
 }
 
@@ -664,7 +666,7 @@ input:checked ~ label::after {
     margin-bottom: 20px;
 }
 
-.contacts__address > * {
+.contacts__address > *, .address__link > * {
     display: block;
     font-style: normal;
     font-size: 15px;
@@ -691,8 +693,8 @@ input:checked ~ label::after {
     font-weight: 300;
     padding: 25px 0 25px 200px;
     line-height: 1.5;
-    border-top: solid 1px var(--light-silver);
-    border-right: solid 1px var(--light-silver);
+    border-top: solid 1px rgb(244, 244, 247, 0.2);
+    border-right: solid 1px rgb(244, 244, 247, 0.2);
     color: var(--light-silver);
     background-image: url(../img/ic-next.svg);
     background-repeat: no-repeat;
@@ -711,8 +713,6 @@ input:checked ~ label::after {
 }
 .button--accent {
     background-color: var(--dark-sky-blue);
-    border-top: 1px solid transparent;
-    border-right: 1px solid transparent;
     margin-right: 113px;
     margin-left: -200px;
     position: static;
@@ -720,8 +720,6 @@ input:checked ~ label::after {
 
 .button--accent:hover {
     background-color: transparent;
-    border-top: 1px solid var(--light-silver);
-    border-right: 1px solid var(--light-silver);
 }
 
 .footer__copyright {
@@ -730,6 +728,7 @@ input:checked ~ label::after {
     font-weight: 300;
     color: var(--light-silver);
     margin-left: auto;
+    opacity: 0.3;
 }
 
 .block {
