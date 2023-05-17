@@ -34,7 +34,7 @@
                 </div>
                 <div class="language">
                     <button title="Norwegian" type="button" value="Norwegian" class="language__item">No</button>
-                    <button title="English" type="button" value="English" class="language__item language__item--active" checked>En</button>
+                    <button title="English" type="button" value="English" class="language__item language__item--active">En</button>
                     <button title="Russian" type="button" value="Russian" class="language__item">Ru</button>
                 </div> 
             </div>
@@ -59,53 +59,48 @@
 <!-- **********advantage********* -->
 
         
-            <section id="approach" class="approach">
+            <section id="approach" class="approach block">
                 <div class="container container--white">
                     <div class="content-wrap">
-                <h2 class="approach__title title">We&nbsp;combine high level of&nbsp;professionalism and individual approach</h2>
-                <p class="approach__subtitle subtitle">We&nbsp;have subject domain expertise in&nbsp;various aspects</p>
+                        <h2 class="approach__title title">We&nbsp;combine high level of&nbsp;professionalism and individual approach</h2>
+                        <p class="approach__subtitle subtitle">We&nbsp;have subject domain expertise in&nbsp;various aspects</p>
+                        <ul class="card">
+                            <li class="card__item">
+                                <picture class="card__image">
+                                    <img width="50" height="52" src="img/ic-project.svg" alt="">
+                                </picture>
+                                <p class="card__description description-bold">Project management for simple and complex projects</p>
+                            </li>
+
+                            <li class="card__item">
+                                <picture class="card__image">
+                                    <img width="48" height="59" src="img/ic-hire.svg" alt="">
+                                </picture>
+                                <p class="card__description description-bold">Management for hire</p>
+                            </li>
+
+                            <li class="card__item">
+                                <picture class="card__image">
+                                    <img width="56" height="43" src="img/ic-digital.svg" alt="">
+                                </picture>
+                                <p class="card__description description-bold">Digital transformation</p>
+                            </li>
+                        </ul>
+
+                        <h2 class="job-types__title title">What We Do</h2>
+                        <ul class="types-list">
+                            <li class="types-list-item"><p class="types-list-item__text mini-subtitle">Development and support of&nbsp;new and existing software systems</p></li>
+                            <li class="types-list-item"><p class="types-list-item__text mini-subtitle">Deep analytics in&nbsp;various spheres</p></li>
+                            <li class="types-list-item"><p class="types-list-item__text mini-subtitle">Insights-driven solutions</p></li>
+                            <li class="types-list-item"><p class="types-list-item__text mini-subtitle">Agile product engineering</p></li>
+
+                            <li class="types-list-item"><p class="types-list-item__text mini-subtitle">Quality Assurance for new and existing products</p></li>
+                            <li class="types-list-item"><p class="types-list-item__text mini-subtitle">Data collection, research and analysis</p></li>
+                            <li class="types-list-item"><p class="types-list-item__text mini-subtitle">UX/UI concepts and design</p></li>
+                            <li class="types-list-item"><p class="types-list-item__text mini-subtitle">Video and motion design</p></li>
+                        </ul>
                     </div>
-                <ul class="card">
-                    <li class="card__item">
-                        <div class="card__image">
-                            <img width="50px" height="52px" src="img/ic-project.svg" alt="">
-                        </div>
-                        <p class="card__description description-bold">Project management for simple and complex projects</p>
-                    </li>
-
-                    <li class="card__item">
-                        <div class="card__image">
-                            <img width="48px" height="59px" src="img/ic-hire.svg" alt="">
-                        </div>
-                        <p class="card__description description-bold">Management for hire</p>
-                    </li>
-
-                    <li class="card__item">
-                        <div class="card__image">
-                            <img width="56px" height="43px" src="img/ic-digital.svg" alt="">
-                        </div>
-                        <p class="card__description description-bold">Digital transformation</p>
-                    </li>
-                </ul>
-            </section>
-
-            <section class="job-types block">
-                <div class="container container--white">
-                <div class="content-wrap">
-                <h2 class="job-types__title title">What We Do</h2>
-                <ul class="types-list">
-                    <li class="types-list-item"><p class="types-list-item__text mini-subtitle">Development and support of&nbsp;new and existing software systems</p></li>
-                    <li class="types-list-item"><p class="types-list-item__text mini-subtitle">Deep analytics in&nbsp;various spheres</p></li>
-                    <li class="types-list-item"><p class="types-list-item__text mini-subtitle">Insights-driven solutions</p></li>
-                    <li class="types-list-item"><p class="types-list-item__text mini-subtitle">Agile product engineering</p></li>
-
-                    <li class="types-list-item"><p class="types-list-item__text mini-subtitle">Quality Assurance for new and existing products</p></li>
-                    <li class="types-list-item"><p class="types-list-item__text mini-subtitle">Data collection, research and analysis</p></li>
-                    <li class="types-list-item"><p class="types-list-item__text mini-subtitle">UX/UI concepts and design</p></li>
-                    <li class="types-list-item"><p class="types-list-item__text mini-subtitle">Video and motion design</p></li>
-                </ul>
                 </div>
-            </div>
             </section>
 
         <section class="project block" id="project">
@@ -116,7 +111,7 @@
                 </div>
 
                 <div class="grid-container">
-                    <div class="project-item grid-item--wide">
+                    <div class="project__item grid-item--wide">
                         <a title="BirdieEyes" href="javascript:void(0);">
                             <div class="content-wrap">
                                 <div class="text-block text-block--color-accent">
@@ -124,16 +119,16 @@
                                     <p class="text-block__subtitle text-block__subtitle--color-accent subtitle">We&nbsp;have introduced&nbsp;AR technology into one of&nbsp;the most traditional games and made it&nbsp;even more interesting</p>
                                 </div>
                             </div>
-                            <picture class="image-wrapper">
-                                <img src="img/vid-birdieeyes.jpg" alt="" width="1180" height="600" srcset="">
+                            <picture class="image-wrapper image-wrapper--wide">
+                                <img src="img/vid-birdieeyes.jpg" alt="" width="1180" height="600">
                             </picture>
                         </a>
                     </div>
 
-                    <div class="project-item-item">
-                        <a title="UpSport" href="javascript:void(0);" alt="">
+                    <div class="project__item">
+                        <a title="UpSport" href="javascript:void(0);">
                             <picture class="image-wrapper">
-                                <img src="img/img-upsport.jpg" alt="" width="580" height="320" srcset="">
+                                <img src="img/img-upsport.jpg" alt="" width="580" height="320">
                             </picture> 
                             <div class="card-text">
                                 <h4 class="card-text__title">UpSport</h4>
@@ -142,10 +137,10 @@
                         </a>
                     </div>
 
-                    <div class="project-item-item">
-                        <a title="XLand" href="javascript:void(0);" alt="">
+                    <div class="project__item">
+                        <a title="XLand" href="javascript:void(0);">
                         <picture class="image-wrapper">
-                            <img src="img/img-xland.jpg" alt="" width="580" height="320" srcset="">
+                            <img src="img/img-xland.jpg" alt="" width="580" height="320">
                         </picture>
                         <div class="card-text">
                             <h4 class="card-text__title">XLand</h4>
@@ -154,10 +149,10 @@
                         </a>
                     </div>
 
-                    <div class="project-item">
-                        <a title="Phonero" href="javascript:void(0);" alt="">
+                    <div class="project__item">
+                        <a title="Phonero" href="javascript:void(0);">
                             <picture class="image-wrapper">
-                                <img src="img/img-phonero.jpg" alt="" width="580" height="320" srcset="">
+                                <img src="img/img-phonero.jpg" alt="" width="580" height="320">
                             </picture>
                             <div class="card-text">
                                 <h4 class="card-text__title">phonero</h4>
@@ -166,10 +161,10 @@
                         </a>
                     </div>
 
-                    <div class="project-item">
-                        <a title="Kongsberg" href="javascript:void(0);" alt="">
+                    <div class="project__item">
+                        <a title="Kongsberg" href="javascript:void(0);">
                             <picture class="image-wrapper">
-                                <img src="img/img-kongsberg.jpg" alt="" width="580" height="320" srcset="">
+                                <img src="img/img-kongsberg.jpg" alt="" width="580" height="320">
                             </picture>
                             <div class="card-text">
                                 <h4 class="card-text__title mini-title">Kongsberg Group</h4>
@@ -185,15 +180,15 @@
             <div class="container">
                 <div class="grid-container">
                     <div class="team-item grid-item--wide">
-                        <a title="Our team" href="javascript:void(0);" alt="">
+                        <a title="Our team" href="javascript:void(0);">
                             <div id="our-team" class="content-wrap content-wrap--right">
                                 <div class="text-block">
                                     <h4 class="text-block__title mini-title">Our team</h4>
                                     <p class="text-block__subtitle subtitle">We&nbsp;are united by&nbsp;our passion to&nbsp;create unique and efficient digital products</p>
                                 </div>
                             </div>
-                            <picture class="image-wrapper">
-                                <img src="img/img-team-home.jpg" alt="" width="1180" height="600" srcset="">
+                            <picture class="image-wrapper image-wrapper--wide">
+                                <img src="img/img-team-home.jpg" alt="" width="1180" height="600">
                             </picture>
                         </a>
                     </div>
@@ -206,43 +201,43 @@
                 <h2 class="slider-title title">Inside Frontbyte</h2>
                 <p class="slider-subtitle subtitle">We&nbsp;change the way businesses and industries operate.</p>
             </div>
-            <div class="text-block text-block--wide">
-                <h4 class="mini-title text-block__title--slider">Press about&nbsp;us</h4>
-                <a title="" href="javascript:void(0);">
-                    <p class="subtitle text-block__subtitle--slider">
-                    AR&nbsp;golf platform BirdieEyes raises $300 million at&nbsp;$2.7 billion valuation
-                    </p>
-                </a>
-                <picture>
-                    <img class="text-block__logo" width="50" height="25" src="https://upload.wikimedia.org/wikipedia/commons/c/cb/Tommy_Hilfiger_logo.gif">
-                </picture>
-                <ul class="slider-wrapper">
-                    <li class="slider-item">
-                        <input type="radio" id="slider-1" name="slider" checked>
-                        <label for="slider-1"></label>
-                    </li>
-                    <li class="slider-item">
-                        <input type="radio" id="slider-2" name="slider">
-                        <label for="slider-2"></label>
-                    </li>
-                    <li class="slider-item">
-                        <input type="radio" id="slider-3" name="slider">
-                        <label for="slider-3"></label>
-                    </li>
-                    <li class="slider-item">
-                        <input type="radio" id="slider-4" name="slider">
-                        <label for="slider-4"></label>
-                    </li>
-                    <li class="slider-item">
-                        <input type="radio" id="slider-5" name="slider">
-                        <label for="slider-5"></label>
-                    </li>
-                </ul>
-            </div>
-            <div class="content-wrap--right">
-                <picture class="slider-picture">
-                    <a title="" href="javascript:void(0);"><img src="img/img-inside-press.jpg" alt="" width="980" height="600" srcset=""></a>
-                </picture>
+            <div class="slider__body">
+                <div class="text-block text-block--wide">
+                    <h4 class="mini-title text-block__title--slider">Press about&nbsp;us</h4>
+                    <a title="" href="javascript:void(0);">
+                        <p class="subtitle text-block__subtitle--slider">
+                        AR&nbsp;golf platform BirdieEyes raises $300 million at&nbsp;$2.7 billion valuation
+                        </p>
+                    </a>
+                    <picture>
+                        <img class="text-block__logo" width="50" height="25" alt="" src="https://upload.wikimedia.org/wikipedia/commons/c/cb/Tommy_Hilfiger_logo.gif">
+                    </picture>
+                    <ul class="slider-wrapper">
+                        <li class="slider-item">
+                            <input type="radio" id="slider-1" name="slider" checked>
+                            <label for="slider-1"></label>
+                        </li>
+                        <li class="slider-item">
+                            <input type="radio" id="slider-2" name="slider">
+                            <label for="slider-2"></label>
+                        </li>
+                        <li class="slider-item">
+                            <input type="radio" id="slider-3" name="slider">
+                            <label for="slider-3"></label>
+                        </li>
+                        <li class="slider-item">
+                            <input type="radio" id="slider-4" name="slider">
+                            <label for="slider-4"></label>
+                        </li>
+                        <li class="slider-item">
+                            <input type="radio" id="slider-5" name="slider">
+                            <label for="slider-5"></label>
+                        </li>
+                    </ul>
+                </div>
+                <div class="content-wrap--right">
+                        <a class="slider-picture" title="" href="javascript:void(0);"><img src="img/img-inside-press.jpg" alt="" width="980" height="600"></a>
+                </div>
             </div>
         </div>
     </section>
@@ -255,19 +250,19 @@
                         <a title="News" class="news-item__link" href="javascript:void(0);">
                             <p class="news-item__text mini-subtitle">How to&nbsp;use email marketing to&nbsp;connect with your users</p>
                         </a>
-                        <time title="News" class="news-item__date" datetime="2018-19-12">Dec 19, 2018</time>
+                        <time title="News" class="news-item__date" datetime="2018-12-19">Dec 19, 2018</time>
                     </li>
                     <li class="news-item">
                         <a title="News" class="news-item__link" href="javascript:void(0);">
                             <p class="news-item__text mini-subtitle">How to&nbsp;use email marketing to&nbsp;connect with your users</p>
                         </a>
-                        <time class="news-item__date" datetime="2018-19-12">Dec 19, 2018</time>
+                        <time class="news-item__date" datetime="2018-12-19">Dec 19, 2018</time>
                     </li>
                     <li class="news-item">
                         <a title="News" class="news-item__link" href="javascript:void(0);">
                             <p class="news-item__text mini-subtitle">How to&nbsp;use email marketing to&nbsp;connect with your users</p>
                         </a>
-                        <time class="news-item__date" datetime="2018-19-12">Dec 19, 2018</time>
+                        <time class="news-item__date" datetime="2018-12-19">Dec 19, 2018</time>
                     </li>
                 </ul>
             </div>
@@ -323,7 +318,7 @@
                                     <span class="contacts__text">Minsk</span>
                                     <span class="contacts__text">Dombrovskaya str., 9, оffice 10.2.2</span>
                                 </a>
-                                <a title="mail"class="contacts__mail" href="mailto:contact@frontbyte.by">contact@frontbyte.by</a>
+                                <a title="mail" class="contacts__mail" href="mailto:contact@frontbyte.by">contact@frontbyte.by</a>
                                 <a title="phone number" class="contacts__tel" href="tel:+375291393336">+375 29 1393336</a>
                             </address>
                         </div>
